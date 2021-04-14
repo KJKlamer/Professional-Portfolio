@@ -13,7 +13,7 @@
   grid-template-areas:
     'header header header header header header'
     'menu main main main right right'
-    'menu footer footer footer footer footer';
+    'footer footer footer footer footer footer';
   grid-gap: 10px;
   background-color: #A274FF;
   padding: 10px;
@@ -39,7 +39,12 @@
     font-size: 30px;
   
 }
-
+.grid-container .item5 {
+  background-color: #A274FF;
+  text-align: center;
+  padding: 50px 10px 10px 10px;
+  font-size: 30px;
+}
 /**********************************/
 /*********** Nav Bar CSS **********/
 /**********************************/
