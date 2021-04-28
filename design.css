@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 5
+   Case Problem 2
+   
+   Author: KJ Klamer  
+   Date: 04/22/2021      
+   
+   Filename: wc_styles.css
+
+   This file contains the layout styles and media
+   queries used with sample pages from the Willet
+   Creek Golf Course website.
+
+*/
+
+/**********************************/
+/*********** Main Layout CSS **********/
+/**********************************/
+.container {
+    width: 90%;
+    max-width:1200px;
+    margin-right:auto;
+    margin-left: auto;
+}
+.container .container--main{
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    height: 100%;
+    min-height: 850px;
+    padding-top: 10%;
+    padding-bottom: 64px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    text-align: center;
+}
+img{
+    vertical-align: middle;
+    display: inline-block;
+}
+.mainheader {
+    position: relative;
+    z-index: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+section{
+    display:block;
+}
