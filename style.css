@@ -53,6 +53,7 @@ ul {
   min-height: 320px;
   margin-bottom: 64px;
   border-radius: 12px;
-  box-shadow: 3px 3px 10px -4px rgb(rgba(255, 0, 234, 0.644), green, blue);
+  box-shadow: 3px 3px 10px -4px rgb(rgba(255, 0, 234, 0.644), rgb(132, 0, 255), rgb(212, 102, 255));
   object-fit:cover;
+  padding-top: 5%;
 }
