@@ -25,7 +25,7 @@
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0px 0px 0px 15%;
+    padding: 0px 0px 0px 4%;
     overflow: hidden;
     background-color: #333;
   }
@@ -38,7 +38,7 @@ ul {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 20px 20px;
     text-decoration: none;
   }
   
@@ -51,9 +51,16 @@ ul {
 .main__img{
   height:45%;
   min-height: 320px;
+  margin: 20px;
+  margin-left: 35%;
   margin-bottom: 64px;
   border-radius: 12px;
-  box-shadow: 3px 3px 10px -4px rgb(rgba(255, 0, 234, 0.644), rgb(132, 0, 255), rgb(212, 102, 255));
+  box-shadow: 0px 4px 25px -1px rgb(117, 26, 117);
   object-fit:cover;
-  padding-top: 5%;
+}
+/**********************************/
+/*********** Position Class **********/
+/**********************************/
+.mainposition{
+  position: relative;
 }
