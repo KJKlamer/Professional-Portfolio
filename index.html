@@ -2,38 +2,80 @@
 <!--KJ Klamer
 04/13/2021
 -->
-<html>
-  <head>
+<html id="main">
+  <head >
     <link href="style.css" rel="stylesheet">
   </head>
   <body>   
-    <div>
+    <div class="sticky">
       <ul>
-        <h1 style="font-size: 25px; color: white; float: left; margin-right: 500px;">KJ Klamer</h1>
-        <li style="margin-left: 8%;"><a href="#resume">Resume</a></li>
+        <h1 style="font-size: 25px;float: left; margin-right: 500px;"><a href="#main">KJ Klamer</a></h1>
+        <li style="margin-left: 7%;"><a href="#resume">Resume</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
+        
       </ul>
     </div>
-    <div class="container container--main">
-      <img src="myselfmaroon.JPG" alt="A Picture of Myself" style="width:400px;height: 430px;"
-      class="main__img">
-      <header class="mainheader">
-        <div class="mainposition">
-          <h1 style="text-align: center;">About Me</h1>
-          <p style="text-align: center; font-size: large;">Hi my name is KJ Klamer and I am currently a student 
-          <br><br>at Francis Howell Central Highschool and Lewis and Clark Career Center.<br><br>
-          At Lewis and Clark I am in the Computer Software Development class with my teacher, 
-          <br><br>Mr. Schmidt. Along with the creation of websites and little coded<br><br>
-          games I've created. I also dabble in graphic design with the use of photoshop, lightroom 
-          <br><br>and sometimes gimp. I take photos and videos also and I edit them myself.<br><br>
-          In addition, I work at dierbergs and currently am a bagger there. In all, I feel like 
-          <br><br>I have accomplishments but unfortuantly I have been slacking off in my <br><br>
-          Lewis Class and I am trying to make up for my mistakes because
-          <br><br>I'm better than that. Thank you for taking the time to read.
-          </p>
-        </div>
-      </header>
-    </div>
+    <section class="mainpadding">
+      <div class="container container--main">
+        <img src="myselfmaroon.JPG" alt="A Picture of Myself" style="width:400px;height: 430px;"
+        class="main__img">
+        <header class="mainheader">
+          <div class="mainposition">
+            <h1 style="text-align: center;">About Me</h1>
+            <p style="text-align: center; font-size: 20px;">Hi my name is KJ Klamer and I am currently a student 
+            at Francis Howell Central Highschool and Lewis and Clark Career Center.<br><br>
+            At Lewis and Clark I am in the Computer Software Development class with my teacher, 
+            Mr. Schmidt. Along with the creation of websites and little coded<br><br>
+            games I've created. I also dabble in graphic design with the use of photoshop, lightroom 
+            and sometimes gimp. I take photos and videos also and I edit them myself.<br><br>
+            In addition, I work at dierbergs and currently am a bagger there. In all, I feel like 
+            I have accomplishments but unfortuantly I have been slacking off in my <br><br>
+            Lewis Class and I am trying to make up for my mistakes because
+            I'm better than that. Thank you for taking the time to read.
+            </p>
+          </div>
+        </header>
+      </div>
+    </section>
+    <section id="resume" style="background-color:#F7F7F7;">
+      <div class="container container--main">
+        <img src="myselfmaroon.JPG" alt="A Picture of Myself" style="width:400px;height: 430px;"
+        class="main__img">
+        <header class="mainheader">
+          <div class="mainposition">
+            <h1 style="text-align: center;">About Me</h1>
+            <p style="text-align: center; font-size: large;">Hi my name is KJ Klamer and I am currently a student 
+            <br><br>at Francis Howell Central Highschool and Lewis and Clark Career Center.<br><br>
+            At Lewis and Clark I am in the Computer Software Development class with my teacher, 
+            <br><br>Mr. Schmidt. Along with the creation of websites and little coded<br><br>
+            games I've created. I also dabble in graphic design with the use of photoshop, lightroom 
+            <br><br>and sometimes gimp. I take photos and videos also and I edit them myself.<br><br>
+            In addition, I work at dierbergs and currently am a bagger there. In all, I feel like 
+            <br><br>I have accomplishments but unfortuantly I have been slacking off in my <br><br>
+            Lewis Class and I am trying to make up for my mistakes because
+            <br><br>I'm better than that. Thank you for taking the time to read.
+            </p>
+          </div>
+        </header>
+      </div>
+    </section>
+    <form
+  action="https://formspree.io/f/mwkavygp"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="_replyto">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+
+  <!-- your other form fields go here -->
+
+  <button type="submit">Send</button>
+</form>
     </div>
   <body>
