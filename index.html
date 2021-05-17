@@ -5,6 +5,16 @@
 <html id="main">
   <head >
     <link href="style.css" rel="stylesheet">
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) { 
+          var scrollpos = localStorage.getItem('scrollpos');
+          if (scrollpos) window.scrollTo(0, scrollpos);
+      });
+
+      window.onbeforeunload = function(e) {
+          localStorage.setItem('scrollpos', window.scrollY);
+      };
+    </script>
   </head>
   <body>   
     <div class="sticky">
@@ -39,25 +49,39 @@
       </div>
     </section>
     <section id="resume" style="background-color:#F7F7F7;">
-      <div class="container container--main">
-        <img src="myselfmaroon.JPG" alt="A Picture of Myself" style="width:400px;height: 430px;"
-        class="main__img">
-        <header class="mainheader">
-          <div class="mainposition">
-            <h1 style="text-align: center;">About Me</h1>
-            <p style="text-align: center; font-size: large;">Hi my name is KJ Klamer and I am currently a student 
-            <br><br>at Francis Howell Central Highschool and Lewis and Clark Career Center.<br><br>
-            At Lewis and Clark I am in the Computer Software Development class with my teacher, 
-            <br><br>Mr. Schmidt. Along with the creation of websites and little coded<br><br>
-            games I've created. I also dabble in graphic design with the use of photoshop, lightroom 
-            <br><br>and sometimes gimp. I take photos and videos also and I edit them myself.<br><br>
-            In addition, I work at dierbergs and currently am a bagger there. In all, I feel like 
-            <br><br>I have accomplishments but unfortuantly I have been slacking off in my <br><br>
-            Lewis Class and I am trying to make up for my mistakes because
-            <br><br>I'm better than that. Thank you for taking the time to read.
-            </p>
+      <div class="container container--center">
+        <h2 class="section_heading">Resume</h2>
+        <img src="kjsresume.png" alt="A Picture of My Resume" style="width:400px;height: 430px;"
+        class="resume__img">
+      </div>
+    </section>
+    <section id="projects">
+      <div class="container container--center">
+        <h2 class="section_heading">Projects</h2>
+        <div class="projects-list-wrapper w-dyn-list">
+          <div role="list" class="projects-list-grid w-dyn-items">
+            <div role="listitem" class="projects-list__item w-dyn-item">
+              <a href="#" class="projects-list-item-wrap w-inline-block">
+                <img src="case1.png" alt="Screenshot of Webkit Case 1" class="card projects-list__img">
+              </a>
+            </div>
+            <div role="listitem" class="projects-list__item w-dyn-item">
+              <a href="#" class="projects-list-item-wrap w-inline-block">
+                <img src="case2.png" alt="Screenshot of Webkit Case 2" class="card projects-list__img">
+              </a>
+            </div>
+            <div role="listitem" class="projects-list__item w-dyn-item">
+              <a href="#" class="projects-list-item-wrap w-inline-block">
+                <img src="case4.png" alt="Screenshot of Webkit Case 4" class="card projects-list__img">
+              </a>
+            </div>
+            <div role="listitem" class="projects-list__item w-dyn-item">
+              <a href="#" class="projects-list-item-wrap w-inline-block">
+                <img src="julytimer.png" alt="Screenshot of 4th of July Countdowntimer" class="card projects-list__img">
+              </a>
+            </div>
           </div>
-        </header>
+        </div>
       </div>
     </section>
     <form
